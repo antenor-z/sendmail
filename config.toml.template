@@ -1,0 +1,4 @@
+[mailgun]
+apiKey="xxxxxxx"
+sender="John Doe <john@example.com>"
+domain="example.com"
