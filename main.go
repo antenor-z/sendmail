@@ -104,8 +104,8 @@ func main() {
 
 	if filePath != "" {
 		dat, err := os.ReadFile(filePath)
-		content = string(dat)
 		check(err)
+		content = string(dat)
 	}
 
 	sendMail(Email{From: config.Mailgun.Sender, To: to, Subject: subject, Text: content}, config)
